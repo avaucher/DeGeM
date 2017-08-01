@@ -16,4 +16,4 @@ Typical users for this application could be couples, groups of friends, shared f
 
 ## History
 
-This project started as a software for personal use and to get acquainted with QML.
+This project started as a software for personal use in order to get acquainted with QML.
