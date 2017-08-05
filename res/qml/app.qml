@@ -1,12 +1,26 @@
 import QtQuick 2.3
 import QtQuick.Templates 2.1
 import QtQuick.Controls 2.1
+import Local 1.0
 
 Rectangle {
     id: rectangle
     width: 400
     height: 400
     color: "#f4f4f4"
+
+    ExpenseSummaryModel {
+        id: expenseModel
+    }
+
+    GridView {
+        anchors.fill: parent
+        model: expenseModel
+        delegate: Column {
+            Text { text: personName; anchors.horizontalCenter: parent.horizontalCenter }
+            Text { text: dueAmount; anchors.horizontalCenter: parent.horizontalCenter }
+        }
+    }
 
     SpinBox {
         id: spinBox

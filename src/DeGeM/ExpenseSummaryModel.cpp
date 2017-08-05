@@ -34,4 +34,11 @@ QVariant ExpenseSummaryModel::data(const QModelIndex& index, int role) const {
   return QVariant();
 }
 
+QHash<int, QByteArray> ExpenseSummaryModel::roleNames() const {
+  QHash<int, QByteArray> roleNames;
+  roleNames.insert(PersonNameRole, "personName");
+  roleNames.insert(DueAmountRole, "dueAmount");
+  return roleNames;
+}
+
 } // namespace DeGeM
