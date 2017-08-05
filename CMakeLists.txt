@@ -5,10 +5,12 @@ project(DeGeM)
 find_package(Qt5 COMPONENTS Core Gui Qml Quick REQUIRED)
 
 set(headers
+    src/DeGeM/ExpenseSummaryModel.h
     )
 
 set(sources
     src/DeGeM/main.cpp
+    src/DeGeM/ExpenseSummaryModel.cpp
     )
 
 set(resources
