@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.0.2)
 
 project(DeGeM)
 
+set(CMAKE_AUTOMOC ON)
 find_package(Qt5 COMPONENTS Core Gui Qml Quick REQUIRED)
 
 set(headers
