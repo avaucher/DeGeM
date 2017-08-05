@@ -5,6 +5,7 @@ project(DeGeM)
 find_package(Qt5 COMPONENTS Core Gui Qml Quick REQUIRED)
 
 set(headers
+    src/DeGeM/SingleExpenseSummary.h
     src/DeGeM/ExpenseSummaryModel.h
     )
 
