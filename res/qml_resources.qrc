@@ -1,5 +1,6 @@
 <!DOCTYPE RCC><RCC version="1.0">
   <qresource>
     <file>qml/app.qml</file>
+    <file>qml/ExpenseItem.qml</file>
   </qresource>
 </RCC>

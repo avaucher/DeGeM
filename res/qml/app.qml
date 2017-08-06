@@ -13,20 +13,16 @@ Rectangle {
         id: expenseModel
     }
 
-    Component {
-        id: expenseDelegate
-        Item {
-            width: 180; height: 40
-            Row {
-                Text { text: personName }
-                Text { text: '<b>Due amount:</b> ' + dueAmount }
-            }
-        }
-    }
-
     ListView {
-        anchors.fill: parent
+        id: listView
+        width: parent.width
+        height: parent.height
         model: expenseModel
-        delegate: expenseDelegate
+        delegate: ExpenseItem {
+            width: parent.width
+            height: 40
+            dueAmount: model.dueAmount
+            personName: model.personName
+        }
     }
 }
