@@ -20,7 +20,6 @@ Rectangle {
         model: expenseModel
         delegate: ExpenseItem {
             width: parent.width
-            height: 40
             dueAmount: model.dueAmount
             personName: model.personName
         }

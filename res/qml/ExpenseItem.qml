@@ -3,6 +3,7 @@ import QtQuick 2.3
 Rectangle {
     property string personName
     property double dueAmount: 0.0
+    height: childrenRect.height
 
     Text {
         text: personName;
